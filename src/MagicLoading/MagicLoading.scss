@@ -1,0 +1,51 @@
+// Generated with util/create-component.js
+@import "../variables.scss";
+@import "../typography.scss";
+
+.loading {
+  box-sizing: border-box;
+  border-radius: 50%;
+  border-top: 10px solid #e74c3c;
+  position: relative;
+  animation: animate1 2s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before,
+  &::after {
+    content: "";
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    left: 0px;
+    top: -10px;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
+  &::before {
+    border-top: 10px solid #e67e22;
+    transform: rotate(120deg);
+  }
+  &::after {
+    border-top: 10px solid #3498db;
+    transform: rotate(240deg);
+  }
+  span {
+    color: #000000;
+    text-align: center;
+    animation: animate2 2s linear infinite;
+  }
+
+  @keyframes animate1 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes animate2 {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+}
