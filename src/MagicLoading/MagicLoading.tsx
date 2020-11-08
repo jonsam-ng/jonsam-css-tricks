@@ -1,8 +1,5 @@
-// Generated with util/create-component.js
 import React from "react";
-
 import { MagicLoadingProps } from "./MagicLoading.types";
-
 import "./MagicLoading.scss";
 
 const MagicLoading: React.FC<MagicLoadingProps> = ({
@@ -24,7 +21,7 @@ const MagicLoading: React.FC<MagicLoadingProps> = ({
 
   return (
     <div
-      className="loading"
+      className="magic__loading-container"
       style={{
         width: realSize,
         height: realSize,

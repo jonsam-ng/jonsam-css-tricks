@@ -1,0 +1,80 @@
+// Generated with util/create-component.js
+@import "../variables.scss";
+@import "../typography.scss";
+
+.rhythm__loading--container {
+  background-color: #262626;
+  width: 100vw;
+  height: 100vh;
+
+  ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+  
+    li {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      animation: animate 1.6s ease-in-out infinite;
+      list-style: none;
+  
+      &:nth-of-type(1) {
+        animation-delay: -1.4s;
+        background-color: #ffff00;
+        box-shadow: 0 0 50px #ffff00;
+      }
+      
+      &:nth-of-type(2) {
+        animation-delay: -1.2s;
+        background-color: #76ff03;
+        box-shadow: 0 0 50px #76ff03;
+      }
+      
+      &:nth-of-type(3) {
+        animation-delay: -1.0s;
+        background-color: #f06292;
+        box-shadow: 0 0 50px #f06292;
+      }
+      
+      &:nth-of-type(4) {
+        animation-delay: -0.8s;
+        background-color: #4fc3f7;
+        box-shadow: 0 0 50px #4fc3f7;
+      }
+      
+      &:nth-of-type(5) {
+        animation-delay: -0.6s;
+        background-color: #ba68c8;
+        box-shadow: 0 0 50px #ba68c8;
+      }
+      
+      &:nth-of-type(6) {
+        animation-delay: -0.4s;
+        background-color: #f57c00;
+        box-shadow: 0 0 50px #f57c00;
+      }
+      
+      &:nth-of-type(7) {
+        animation-delay: -0.2s;
+        background-color: #673ab7;
+        box-shadow: 0 0 50px #673ab7;
+      }
+    }
+    
+    @keyframes animate {
+      0%,
+      /* 去掉40%后从20%到100%渐变缩小 */
+      40%,
+      100% {
+          transform: scale(0.2);
+      }
+      20% {
+          transform: scale(1);
+      }
+    }
+  }
+}
+
