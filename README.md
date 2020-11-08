@@ -10,6 +10,7 @@
 ## run
 
 ```bash
+yarn storybook
 yarn story
 ```
 
@@ -30,6 +31,7 @@ yarn test:watch
 
 ```bash
 yarn generate my-component
+yarn gen my-component
 ```
 
 
