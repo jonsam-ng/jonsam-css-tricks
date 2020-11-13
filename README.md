@@ -5,7 +5,11 @@
  * @LastEditTime: 2020-11-07 23:37:40
  * @Description: Readme
 -->
-# jonsam-js-tricks
+# jonsam-css-tricks
+
+> This repo contains some interesting css tricks i have seen in all kinds of place.
+> We got story book to show what's widget like.
+> Enjoy yourself.
 
 ## run
 

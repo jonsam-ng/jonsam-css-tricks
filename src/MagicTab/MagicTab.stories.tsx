@@ -32,4 +32,8 @@ const tabs = [
   },
 ]
 
-export const magicTab = () => <MagicTab tabs={tabs} onClick={() => alert(key)} />;
+const handleTabClick = (key: number | string) => {
+  alert(key);
+}
+
+export const magicTab = () => <MagicTab tabs={tabs} onTabClick={handleTabClick} />;

@@ -1,0 +1,69 @@
+@import "../variables.scss";
+@import "../typography.scss";
+
+.shine__box--container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #060c21;
+
+  .box__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    flex-direction: column;
+    z-index: 0;
+
+    @mixin shadow-box {
+      content: "";
+      position: absolute;
+      top: -2px;
+      bottom: -2px;
+      left: -2px;
+      right: -2px;
+    }
+    .box__inner--wrapper{
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background-color: #060c21;
+      padding: 20px;
+      box-sizing: border-box;
+
+      .box__title--wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+        font-weight: bolder;
+      }
+      .box__content--wrapper {
+        font-size: 18px;
+      }
+    }
+
+    &::before {
+      @include shadow-box;
+      z-index: -1;
+    }
+
+    &::after {
+      @include shadow-box;
+      z-index: -2;
+      filter: blur(40px);
+    }
+
+    &::before,
+    &::after {
+      background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+    }
+  }
+}

@@ -5,5 +5,5 @@ export interface ITab {
 
 export interface MagicTabProps {
   tabs: ITab[],
-  onClick?: (key: string | number) => void,
+  onTabClick?: (key: string | number) => void,
 }
