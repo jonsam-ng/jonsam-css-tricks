@@ -1,0 +1,50 @@
+@import "../variables.scss";
+@import "../typography.scss";
+
+
+.share__list--container {
+  background-color: #9c88ff;
+  height: 100vh;
+  width: 100vw;
+
+  .icon-nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    .icon-container {
+      text-align: center;
+
+      .icon {
+        color: #f5f6fa;
+        padding: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        transform: 4s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      .icon-menu {
+        background-color: #487eb0;
+        position: absolute;
+        border-radius: 8px;
+
+        &:before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          background-color: #487eb0;
+          position: absolute;
+          top: -5px;
+          left: 50%;
+          transform: translateX(-50%) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+
