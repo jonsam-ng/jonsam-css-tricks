@@ -43,3 +43,7 @@ yarn gen my-component
 ## Dependency
 
 - component template: [react-component-library](https://github.com/HarveyD/react-component-library)
+
+## widget list
+
+goto: "src/README.md"
